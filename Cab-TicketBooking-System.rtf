@@ -1,0 +1,171 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial Black;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil Arial;}{\f3\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\qc\ul\f0\fs40 Cab Booking System\par
+
+\pard\f1\fs32\par
+
+\pard\qj\ulnone\b\fs24\lang16393 INTRODUCTION\par
+\par
+Purpose\par
+\par
+T\b0 his system provides customers within the facility with the ability to book cabs smoothly. The customers can modify and are able to cancel the cab for any reason. That prepares within a role and policies. The software should provide an option for checking availability of the cabs. That is important for the customers to get a message if the cab is unavailable. That will be displayed into customers. The customers should be noted when the change has been made or any further changes\par
+\b\par
+Intended audience & reading suggection\par
+\par
+T\b0 his project is a prototype for the cab booking system. This project is useful for the cab management system team and as well as to the passengers.\par
+\b\par
+Product scope\par
+\par
+T\b0 he purpose of the cab booking system is an easy-to-use application for passengers, trying to book online cabs. The system is based on a relational database with its flight management and reservation functions. We will have a database server supporting hundreds of major cities around the world as well as thousands of flights by various airline companies. Above all, we hope to provide a comfortable user experience along with the best pricing available.The required functions are\par
+\par
+\ul\b Overall description\ulnone\par
+\b0\par
+\b PRODUCT PERSPECTIVES\f2\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj\b0 System Interfaces\par
+{\pntext\f3\'B7\tab}User Interfaces\par
+{\pntext\f3\'B7\tab}Hardware Interfaces\par
+{\pntext\f3\'B7\tab}Software Interfaces\par
+{\pntext\f3\'B7\tab}Communications Interfaces\f1\par
+
+\pard\qj\b\par
+\ul User Requirement\ulnone\par
+\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj\b0 Login-system\par
+{\pntext\f3\'B7\tab}Authentication-system\par
+{\pntext\f3\'B7\tab}Cab-booking-System\par
+{\pntext\f3\'B7\tab}Cancellation-System\par
+
+\pard\qj\par
+\ul\b Requirements\ulnone\par
+\par
+Login-Page\par
+\par
+\b0 The system contain 2 input field \par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj Username/Email\b\par
+{\pntext\f3\'B7\tab}\b0 password\b\par
+
+\pard\qj\b0 and 2 buttons, 1 login button, 2 signup button and forget password link, When clicking login, If the user have an account then redirect to home page or show invalid user. If the username matches with the Driver credentials then redirect to driver home page, When username matches with Admin credential then redirect to admin home page. When clicking on signup button it will redirect to signup page,\par
+\par
+\b Signup-Page\par
+\par
+\b0 It should appear when pressing signup button. First there will be 3 choice to select\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj I am user\par
+{\pntext\f3\'B7\tab}I am Driver\par
+{\pntext\f3\'B7\tab}I am Admin\par
+
+\pard\qj If it is user then it contain 7 number of input fields\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj FirstName\par
+{\pntext\f3\'B7\tab}LastName\par
+{\pntext\f3\'B7\tab}Email\par
+{\pntext\f3\'B7\tab}Password\par
+{\pntext\f3\'B7\tab}Confirm Password\par
+{\pntext\f3\'B7\tab}Profile picture\par
+{\pntext\f3\'B7\tab}Username\par
+
+\pard\qj and 2 buttons. 1signup, 2Cancel. when pressing signup a message will show "signup successfull",data is send to database and redirect to login page, when pressing cancel it redirect to home page\par
+\par
+\b Home-Page\par
+\b0\par
+It contain a login button, search button and 2 input field \par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj Current location\par
+{\pntext\f3\'B7\tab}Destination\par
+
+\pard\qj user need to enter the current location and destination then press search if the user is logged in then the page is redirect to cab-page, if user is not logged in then redirect to login page\par
+\par
+\b Cab-Page\b0\par
+\par
+Cab page will appear when pressing search button in home page, it shows details of available cabs near the user location and a book cab button when pressing book cab button the page will redirect to payment page\par
+\par
+\b Payment-Page\par
+\par
+\b0 Payment page will appear when user click book cab button in cab page. The page should contain Different payment method, user can choose any payment method or cash on delivery method, after payment Online, an invoice will send to user's email and redirect to my cab page\par
+\par
+\b My-Cab-Page\par
+\par
+\b0 This page will appear after booking a cab, It shows the booked cab details, ETA and a cancel button which is active only for half of ETA, When press cancel, there will appear an input field saying reason for cancel and user recieve refund, invoice\par
+\par
+\ul\b Driver Requirement\par
+\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj\ulnone\b0 Driver Login\par
+{\pntext\f3\'B7\tab}Driver Signup\par
+{\pntext\f3\'B7\tab}Driver Home-Page\par
+{\pntext\f3\'B7\tab}Passenger Request\par
+{\pntext\f3\'B7\tab}Passenger Details\par
+{\pntext\f3\'B7\tab}See nearby cabs\par
+
+\pard\qj\par
+\b Driver Login\par
+\par
+\b0 This page will launch when pressing Driver login button on driver home page, driver login page should contain 2 input fields\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj User name\par
+{\pntext\f3\'B7\tab}Password\par
+
+\pard\qj and 2 buttons. 1 Sign in button and 2 signup button. When pressing signin button, if the login credentials are valid driver should redirect to Driver home page. When pressing signup it will redirect to signup page\par
+\par
+\b Driver Signup\par
+\par
+\b0 This page will load when pressing signup, The page should contain 6 input fields\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj First name\par
+{\pntext\f3\'B7\tab}Last name\par
+{\pntext\f3\'B7\tab}vehicle number\par
+{\pntext\f3\'B7\tab}Driving license\par
+{\pntext\f3\'B7\tab}Aadhar\par
+{\pntext\f3\'B7\tab}Password\par
+{\pntext\f3\'B7\tab}Confirm password\par
+
+\pard\qj and 2 buttons, 1 signup button. 2 setup payment When pressing signup button it will redirect to driver home page. When pressing setup payment a payment setup window appear, there will be one input field "enter UPI ID" and a button confirm UPI ID\par
+\par
+\b Driver Home-Page\par
+\par
+\b0 This is the default landing page of driver page, this page should contain 2 buttons signin and signup, When pressing sign in it will redirect to login page, when pressing signup it will redirect to sign up page. There will be 2 windows. 1 passenger request. it will contain incoming passenger bookings, driver can click on passenger request then it will change into a map and driver can track user location. The 2nd window is a map that shows all cabs, active cabs. when clicking on passenger request the 2nd window is changed and display details of customer\par
+customer name and location\b\par
+\par
+\b0\par
+\ul\b Admin Requirement\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj\ulnone\b0 Admin login\ul\b\par
+{\pntext\f3\'B7\tab}\ulnone\b0 Admin Home\ul\b\par
+{\pntext\f3\'B7\tab}\ulnone\b0 Total users number\ul\b\par
+{\pntext\f3\'B7\tab}\ulnone\b0 Total cab number\ul\b\par
+{\pntext\f3\'B7\tab}\ulnone\b0 User/Driver Controls\ul\b\par
+{\pntext\f3\'B7\tab}\ulnone\b0 Active users\ul\b\par
+{\pntext\f3\'B7\tab}\ulnone\b0 Payment Transation details\ul\b\par
+
+\pard\qj\par
+\ulnone Admin-Login\par
+\par
+\b0 It is the default admin page contain 2 input field and 1button signin\ul\b\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj\ulnone\b0 Admin-UserName\ul\b\par
+{\pntext\f3\'B7\tab}\ulnone\b0 Admin-Password\ul\b\par
+
+\pard\qj\ulnone\b0 When pressing signin, If the signin credentials are true then redirect to home page\par
+\par
+\b Admin-Home-Page\par
+\par
+\b0 This page appear only when admin is logged in, there are 4 windows to display\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\qj Total users\b\par
+{\pntext\f3\'B7\tab}\b0 Total cab\b\par
+{\pntext\f3\'B7\tab}\b0 Total active users\b\par
+{\pntext\f3\'B7\tab}\b0 Payment details of users\b\par
+
+\pard\qj\b0 When clicking on user/cab, admin can edit , delete user/cab \par
+\par
+\b\par
+\par
+\ul\par
+\ulnone\b0\par
+\b\par
+\par
+}
+ 
